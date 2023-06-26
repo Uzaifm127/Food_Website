@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Chokokutai&family=Homemade+Apple&family=Poppins&family=Quicksand&family=Roboto+Mono&family=Rubik&family=Sacramento&family=Zeyada&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 1vmax;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar {
+  color: white;
+  background: #22222294;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 40rem 1rem 0rem;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.iconContainer {
+  height: 3.5vmax;
+}
+
+.iconContainer img {
+  height: 100%;
+  filter: invert(100%);
+}
+
+.navbarItemContainer {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.navbarItemContainer li {
+  padding: 0.6rem 1.3rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+
+.navbarItemContainer li:hover {
+  background: white;
+  color: #222;
+}
+
+.searchQueryContainer {
+  position: absolute;
+  right: 10%;
+}
+
+.search,
+.searchButton {
+  padding: 0.3rem 0.5rem;
+  text-align: start;
+  height: 100%;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  font-size: 1.12rem;
+  transition: all 1s ease;
+}
+
+.search:focus {
+  width: 100%;
+}
+
+#section1::before {
+  content: "";
+  background-image: url(../Images/bg.1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#section1::after {
+  content: "";
+  background: #000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -2;
+}
+
+#section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  /* background: #000; */
+  /* z-index: -2; */
+  height: 55vmin;
+}
+
+#section1 h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-top: 3rem;
+  font-size: 2.7rem;
+}
+
+#section2 h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 1rem 0rem;
+  text-decoration: underline;
+}
+
+.foodItems img {
+  height: 13vmax;
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+/* Tip: always set the height and width of an inner nested div or element as all outer element take their height and width same as inner. live example in case of foodItemContainer and foodItems img*/
+
+/* Tip: .png format of image provide transparent background facility */
+
+/* Tip: high images and lots of images make the web page lag or too slow to is problem se nipatne ke liye bhi ek tareeka ka screenshot liya tha chatgpt me and another one is you put and test images one by one and then remove it while making a web page and at last you put all images in your website */
+
+/* Tip: outer elements ki height and width set karna avoid kara karo in most cases of nested div. */
+
+/* Tip: z-index ki vajeh se cursor pointer property kaam nhi karti because vo neeche chali jaati hai or typing cursor bhi bankar nhi aata text par live example:- section1 order now button and form tag last me 
+
+If you set the position property of a section element to relative and give it a z-index value of -2, it will be positioned behind other elements with higher z-index values.*/
+
+/* Tip: If the z-index values of the header and section elements are the same, the stacking order of the elements will be determined by their order in the document flow, with later elements appearing on top of earlier ones. In your case, since the section element appears later in the document flow (i.e., after the header element), it will be positioned on top of the header element, causing the header element to appear behind the section element.
+
+To bring the header element in front of the section element, you can either increase its z-index value or change its order in the document flow so that it appears after the section element.
+In HTML, the order of elements in the source code determines their position in the document flow. Elements that appear later in the source code appear on top of earlier elements in the document flow, unless their position property is set to absolute or fixed.
+
+Changing the order of elements in the document flow means rearranging them in the source code so that they appear in a different order on the web page. For example, if you have a header element and a section element in your HTML code, and the section element appears before the header element, you can change their order so that the header element appears before the section element.
+
+To change the order of elements in the document flow, you can simply cut and paste the elements in the HTML code to rearrange them. When you save the changes and reload the web page, the elements will be positioned in the new order according to the rules of the document flow.
+
+Changing the order of elements in the document flow can affect the visual appearance of the web page, especially if the elements have different position or z-index values. By changing the order of elements, you can control their stacking order and determine which elements appear on top of others in the web page.
+*/
+
+.foodItems {
+  display: flex;
+  padding: 0.8rem;
+  background: #fa80721a;
+  border-radius: 1rem;
+  border: 2px solid purple;
+  align-items: center;
+  flex-direction: column;
+  width: 23vmax;
+  margin: 1rem 0.5rem;
+}
+
+.foodItems p {
+  text-align: center;
+}
+
+/* Tip: size of image and its aspect ratio affect how background image complete cover or fill the background of any size. */
+
+#section3::before {
+  content: "";
+  background: url(../Images/contact\ us.1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: 100% 100%; */
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* #section3::after{
+  content: "";
+  background: #000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -2;
+} */
+
+.after {
+  background: #000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -2;
+}
+
+#section3 h1 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+#section3 {
+  padding: 2rem;
+  color: white;
+  position: relative;
+  /* z-index: -2; ye property document flow ko kharab kar sakti hai jisse  */
+}
+
+#section3 form {
+  display: flex;
+  width: 50%;
+  margin: 1.5rem auto;
+  flex-direction: column;
+}
+
+#section3 label,
+#section3 input,
+#section3 textarea {
+  font-size: 1.4rem;
+  margin: 0.15rem 0rem;
+}
+
+#section3 input,
+#section3 textarea {
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  background: #f0ffc0;
+}
+
+.foodItemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 3rem 0rem;
+}
+
+#section1 p {
+  text-align: center;
+  margin-top: 2.3rem;
+  width: 86%;
+  font-size: 1rem;
+}
+
+.orderBtn {
+  border: none;
+  transition: all 1s ease;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 2.9rem;
+}
+
+.orderBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0px);
+}
+
+/* Footer styles */
+
+#foot {
+  background: #252525;
+  color: white;
+  padding: 2rem 0rem;
+}
+
+#foot p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* media queries */
+
+@media (max-width: 1000px) {
+  .foodItemContainer {
+    flex-wrap: wrap;
+  }
+
+  .foodItems {
+    margin: 3rem 0.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 1.5vw;
+  }
+
+  .searchQueryContainer {
+    height: 39%;
+  }
+
+  #section1 {
+    height: 80vmin;
+  }
+
+  #section1 h1 {
+    margin-top: 5rem;
+  }
+
+  #section1 p {
+    margin-top: 3.3rem;
+  }
+
+  .orderBtn {
+    margin-top: 3.9rem;
+  }
+
+  #section1::before {
+    background-size: cover;
+  }
+}
