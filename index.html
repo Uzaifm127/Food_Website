@@ -5,28 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyZigzato.com</title>
-    <link rel="stylesheet" href="/CSS/style.css" />
-    <link
-      rel="website icon"
-      href="/Main Page(Home Page)/Images/website icon in home page.png"
-    />
+    <!-- <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/responsive.css" /> -->
+    <link rel="stylesheet" href="/Food_Website/CSS/style.css" />
+    <link rel="stylesheet" href="/Food_Website/CSS/responsive.css" />
   </head>
   <body>
     <header>
       <nav id="navbar">
         <div class="iconContainer">
-          <img src="Images/website icon in home page.png" alt="" />
+          <!-- <img src="Images/website icon in home page.png" alt="" /> -->
+          <img
+            src="/Food_Website/Images/website icon in home page.png"
+            alt=""
+          />
         </div>
         <ul class="navbarItemContainer">
-          <li>Home</li>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Orders</li>
+          <a href="#section1">Home</a>
+          <a href="#section2">Orders</a>
+          <a href="#section3">Contact</a>
+          <a href="#">Blogs</a>
         </ul>
-        <div class="searchQueryContainer">
-          <input type="text" placeholder="Search" class="search" />
-          <button class="searchButton">Go</button>
-        </div>
       </nav>
     </header>
     <main id="mainContent">
@@ -50,26 +49,41 @@
         <div class="foodItemContainer">
           <div class="foodItems foodItem1">
             <img
-              src="../Main Page(Home Page)/Images/food.1.png"
+              src="/Food_Website/Images/food.1.png"
               alt=""
               name="itemCart1"
             />
+            <!-- <img
+              src="/Images/food.1.png"
+              alt=""
+              name="itemCart1"
+            /> -->
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
           <div class="foodItems foodItem2">
             <img
-              src="../Main Page(Home Page)/Images/food.2.png"
+              src="/Food_Website/Images/food.2.png"
               alt=""
               name="itemCart2"
             />
+            <!-- <img
+              src="/Images/food.2.png"
+              alt=""
+              name="itemCart2"
+            /> -->
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
           <div class="foodItems foodItem3">
             <img
-              src="../Main Page(Home Page)/Images/food.3.png"
+              src="/Food_Website/Images/food.3.png"
               alt=""
               name="itemCart3"
             />
+            <!-- <img
+              src="/Images/food.3.png"
+              alt=""
+              name="itemCart3"
+            /> -->
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
         </div>
@@ -100,6 +114,6 @@
     <footer id="foot">
       <p>&copy; 2023 MyZigzato.com. All rights reserved.</p>
     </footer>
-    <script src="/JS/index.js"></script>
+    <script src="/Food_Website/JS/index.js"></script>
   </body>
 </html>

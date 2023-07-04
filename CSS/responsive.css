@@ -1,0 +1,222 @@
+@media (max-width: 1000px) {
+  #navbar {
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+
+  .iconContainer img {
+    height: 35px;
+  }
+
+  .navbarItemContainer {
+    width: 400px;
+  }
+
+  .navbarItemContainer a {
+    padding: 6px 13px;
+    border-radius: 4px;
+  }
+
+  #section1 {
+    height: 310px;
+  }
+
+  #section1 h1 {
+    font-size: 27px;
+    margin-top: 30px;
+    letter-spacing: 4px;
+  }
+
+  #section1 p {
+    margin-top: 23px;
+    font-size: 10px;
+  }
+
+  .orderBtn {
+    padding: 8px 17px;
+    border-radius: 2px;
+    font-size: 10px;
+    margin-top: 29px;
+  }
+
+  #section2 h1 {
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin: 10px 0px;
+  }
+
+  .foodItemContainer {
+    margin: 30px 0px;
+  }
+
+  .foodItems {
+    padding: 8px;
+    border-radius: 10px;
+    width: 230px;
+    margin: 10px 5px;
+  }
+
+  .foodItems img {
+    height: 130px;
+  }
+
+  #section3 {
+    padding: 20px;
+  }
+
+  #section3 h1 {
+    font-size: 17px;
+  }
+
+  #section3 form {
+    margin: 15px auto;
+    width: 480px;
+  }
+
+  #section3 label,
+  #section3 input,
+  #section3 textarea {
+    font-size: 14px;
+    margin: 1.5px 0px;
+  }
+
+  #section3 input,
+  #section3 textarea {
+    padding: 4px;
+    border-radius: 3px;
+  }
+
+  #foot {
+    padding: 20px 0px;
+  }
+
+  #foot p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 560px) {
+  .iconContainer img {
+    height: 35px;
+  }
+
+  #section1 {
+    height: 280px;
+  }
+
+  #section1 h1 {
+    font-size: 17px;
+    margin-top: 50px;
+  }
+
+  #section1 p {
+    font-size: 8px;
+  }
+
+  #section2 h1 {
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin: 10px 0px;
+  }
+
+  .foodItemContainer {
+    margin: 30px 0px;
+  }
+
+  #section3 {
+    padding: 20px;
+  }
+
+  #section3 h1 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbarItemContainer {
+    width: 72.73vmin;
+  }
+
+  #section3 form {
+    width: 87vmin;
+  }
+}
+
+@media (max-width: 360px) {
+  #navbar {
+    padding: 3vmin 0vmin;
+    font-size: 3.88888vmin;
+  }
+
+  .iconContainer img {
+    height: 9.723vmin;
+  }
+
+  .navbarItemContainer a {
+    padding: 1.6vmin 3.61vmin;
+    border-radius: 1.1vmin;
+  }
+
+  #section1 {
+    height: 77.78vmin;
+  }
+
+  #section1 h1 {
+    font-size: 4.7vmin;
+    margin-top: 14vmin;
+    letter-spacing: 1.46vmin;
+  }
+
+  #section1 p {
+    margin-top: 6.4vmin;
+    font-size: 2.222222vmin;
+  }
+
+  .orderBtn {
+    padding: 2.2vmin 4.72vmin;
+    border-radius: 0.5vmin;
+    font-size: 2.8vmin;
+    margin-top: 8.1vmin;
+  }
+
+  #section2 h1 {
+    font-size: 4.72vmin;
+    letter-spacing: 0.83vmin;
+    margin: 2.77vmin 0vmin;
+  }
+
+  .foodItemContainer {
+    margin: 8.34vmin 0vmin;
+  }
+
+  .foodItems {
+    padding: 2.22vmin;
+    border-radius: 2.77vmin;
+    width: 63.88vmin;
+    margin: 2.7vmin 1.38vmin;
+  }
+
+  .foodItems img {
+    height: 36.11111vmin;
+  }
+
+  .foodItems p {
+    font-size: 4.44vmin;
+  }
+
+  #section3 {
+    padding: 5.6vmin;
+  }
+
+  #section3 h1 {
+    font-size: 4.73vmin;
+  }
+
+  #foot {
+    padding: 5.6vmin 0vmin;
+  }
+
+  #foot p {
+    font-size: 3.61vmin;
+  }
+}
